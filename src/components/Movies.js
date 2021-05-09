@@ -29,7 +29,7 @@ export default Movies
 
 
 const Container = styled.div`
-
+    margin-bottom: 50px;
 `
 
 const Content = styled.div`
