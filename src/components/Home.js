@@ -17,9 +17,9 @@ function Home() {
                   return {id:doc.id,...doc.data()}
                 })
                 dispatch(setMovies(tempMovies));
+            console.log(tempMovies);
             })
     }, [])
-
     return (
         <Container>
             <ImgSlider/>

@@ -3,7 +3,7 @@ import { findRenderedComponentWithType } from 'react-dom/test-utils'
 import styled from 'styled-components';
 import { useHistory } from "react-router-dom";
 import { selectUserName, selectUserPhoto, setUserLogin,setSignOut } from "../features/user/userSlice";
-import { auth,provider } from '../firebase';
+import { auth, provider } from '../firebase';
 import { useSelector, useDispatch } from "react-redux";
 
 function Header() {
