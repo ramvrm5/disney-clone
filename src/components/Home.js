@@ -11,12 +11,12 @@ import { useDispatch } from 'react-redux';
 function Home() {
     const dispatch = useDispatch();
 
+    
     useEffect(() =>{
             db.collection("movies").onSnapshot((snapshot) => {
                 let tempMovies = snapshot.docs.map((doc) => {
                   return {id:doc.id,...doc.data()}
                 })
-                
                 dispatch(setMovies(tempMovies));
             console.log(tempMovies);
             })
