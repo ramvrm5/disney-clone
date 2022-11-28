@@ -7,7 +7,6 @@ import db from '../firebase';
 import { setMovies } from '../features/movie/movieSLice'
 import { useDispatch } from 'react-redux';
 
-
 function Home() {
     const dispatch = useDispatch();
 
